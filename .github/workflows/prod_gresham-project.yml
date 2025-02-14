@@ -34,6 +34,7 @@ jobs:
           cp package-lock.json deployment/
           cp -r node_modules deployment/
           cp next.config.js deployment/ || echo "No next.config.js found"
+          echo "web.config file is required for Windows deployments"  
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
