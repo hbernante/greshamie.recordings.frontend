@@ -33,7 +33,7 @@ jobs:
           cp package.json deployment/
           cp package-lock.json deployment/
           cp -r node_modules deployment/
-          cp -r .vercel deployment/ || echo "No .vercel folder"
+          cp next.config.js deployment/ || echo "No next.config.js found"
       
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
