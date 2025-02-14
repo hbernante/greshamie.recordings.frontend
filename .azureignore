@@ -1,0 +1,12 @@
+node_modules
+.git
+.next/cache
+.next/standalone/node_modules
+.next/trace
+.next/serverless
+logs
+tests
+cypress
+coverage
+.env
+*.log
